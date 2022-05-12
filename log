@@ -30,3 +30,20 @@ sudoku.c:51:21: error: ‘sudo’ undeclared (first use in this function)
 sudoku.c:51:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 8114338
+Thu May 12 15:46:36 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:48:24: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+       for(int j = 0, j < 9; j++){
+                        ^
+sudoku.c:48:32: error: expected ‘;’ before ‘)’ token
+       for(int j = 0, j < 9; j++){
+                                ^
+sudoku.c:51:21: error: ‘sudo’ undeclared (first use in this function)
+           if(num == sudo[k][j] || num == sudo[j][k]){
+                     ^~~~
+sudoku.c:51:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3b07205

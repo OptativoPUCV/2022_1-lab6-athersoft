@@ -47,3 +47,14 @@ sudoku.c:51:21: error: ‘sudo’ undeclared (first use in this function)
 sudoku.c:51:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 3b07205
+Thu May 12 15:46:44 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:51:21: error: ‘sudo’ undeclared (first use in this function)
+           if(num == sudo[k][j] || num == sudo[j][k]){
+                     ^~~~
+sudoku.c:51:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ab8c124

@@ -110,3 +110,14 @@ Sat May 14 21:28:44 UTC 2022:
  1 file changed, 4 insertions(+)
  tests:  0|0
 4c733c8
+Sat May 14 22:05:10 UTC 2022: 
+ sudoku.c | 2 --
+ 1 file changed, 2 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:89:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+4d20350

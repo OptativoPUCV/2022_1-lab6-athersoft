@@ -70,7 +70,7 @@ int is_valid(Node* n){
           int num = n -> sudo[k][u];
           if(num != 0){
             for(int x = i; x < i+3; x++){
-              for(int y = j; j < j+3; j++){
+              for(int y = j; y < j+3; y++){
                 if(num == n -> sudo[x][y]){
                   return 0;
                 }

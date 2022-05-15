@@ -268,3 +268,13 @@ Sun May 15 18:25:35 UTC 2022:
  tests:  7|1
 total_score: 55/70
 47bf652
+Sun May 15 18:50:42 UTC 2022: 
+ sudoku.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:140:10: error: dereferencing pointer to incomplete type ‘List {aka struct List}’
+     list -> current = first(list);
+          ^~
+Compilation failed
+b0cb826

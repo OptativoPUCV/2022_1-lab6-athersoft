@@ -278,3 +278,9 @@ sudoku.c:140:10: error: dereferencing pointer to incomplete type ‘List {aka st
           ^~
 Compilation failed
 b0cb826
+Sun May 15 18:51:24 UTC 2022: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  10|0
+total_score: 70/70
+ae961d2

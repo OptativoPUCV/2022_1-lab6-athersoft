@@ -137,10 +137,10 @@ Node* DFS(Node* initial, int* cont){
       return node;
     }
     List *list = get_adj_nodes(node);
-    list -> current = first(list);
-    while(list->current != NULL){
-      push(stack, list->current);
-      list -> current = list -> current -> next;
+    Node* current = first(list);
+    while(current != NULL){
+      push(stack, current);
+      current = next(list);
     }
     free(node);
     cont++;

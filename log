@@ -127,3 +127,14 @@ Sat May 14 22:07:05 UTC 2022:
  tests:  6|2
 total_score: 45/70
 4590008
+Sun May 15 17:58:04 UTC 2022: 
+ sudoku.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:70:11: error: ‘num’ undeclared (first use in this function)
+           num = n -> sudo[k][u];
+           ^~~
+sudoku.c:70:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fdb3262

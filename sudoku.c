@@ -61,6 +61,27 @@ int is_valid(Node* n){
         }
       }
     }
+
+  for(int i = 0; i < 9; i+=3){
+    for(int j = 0; j < 9; j+= 3){
+      
+      for(int k = i; k < i+3; k++){
+        for(int u = j; u < j+3; j++){
+          num = n -> sudo[k][u];
+          if(num != 0){
+            for(int x = i; x < i+3; x++){
+              for(int y = j; j < j+3; j++){
+                if(num == n -> sudo[x][y]){
+                  return 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
     return 1;
 }
 

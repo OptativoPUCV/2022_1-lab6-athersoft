@@ -75,7 +75,7 @@ int is_valid(Node* n){
         numeros[z] = 0;
       }
       for(int k = i; k < i+3; k++){
-        for(int u = j; u < j+3; j++){
+        for(int u = j; u < j+3; u++){
           if(n->sudo[k][u] != 0){
             if(numeros[n -> sudo[k][u]] == 0){
               numeros[n->sudo[k][u]] = 1;

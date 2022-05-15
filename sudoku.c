@@ -70,11 +70,11 @@ int is_valid(Node* n){
   
   
   for(int i = 0; i < 9; i+=3){
-    for(int i = 0; i <= 10; i++){
+    for(int i = 0; i < 10; i++){
       numeros[i] = 0;
     }
     for(int j = 0; j < 9; j+=3){
-      for(int i = 0; i <= 10; i++){
+      for(int i = 0; i < 10; i++){
       numeros[i] = 0;
     }
       for(int k = i; k < i+3; k++){

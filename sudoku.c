@@ -77,16 +77,20 @@ int is_valid(Node* n){
       for(int k = i; k < i+3; k++){
         for(int u = j; u < j+3; j++){
           if(n->sudo[k][u] != 0){
-            if(numeros[n -> sudo[k][u]] == 0){
-              numeros[n->sudo[k][u]] = 1;
-            }else{
-              return 0;
+            //if(numeros[n -> sudo[k][u]] == 0){
+              numeros[n->sudo[k][u]] += 1;
+              
+            //}else{
+              //return 0;
             }
           }
         }
       }
       
     }
+  }
+  for(int i = 0; i < 10; i++){
+    printf("%i", n->numeros[i]);
   }
     return 1;
 }

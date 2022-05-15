@@ -61,21 +61,24 @@ int is_valid(Node* n){
         }
       }
     }
-
+  
+  int numeros[10];
+  
+  
   for(int i = 0; i < 9; i+=3){
+    for(int i = 0; i < 10; i++){
+      numeros[i] = 0;
+    }
     for(int j = 0; j < 9; j+= 3){
-      
+      for(int i = 0; i < 10; i++){
+        numeros[i] = 0;
+      }
       for(int k = i; k < i+3; k++){
         for(int u = j; u < j+3; j++){
-          int num = n -> sudo[k][u];
-          if(num != 0){
-            for(int x = i; x < i+3; x++){
-              for(int y = j; y < j+3; y++){
-                if(num == n -> sudo[x][y]){
-                  return 0;
-                }
-              }
-            }
+          if(numeros[n -> sudo[k][u]] == 0){
+            numeros[n->sudo[k][u]] = 1;
+          }else{
+            return 0;
           }
         }
       }

@@ -217,3 +217,13 @@ sudoku.c:91:3: error: control reaches end of non-void function [-Werror=return-t
 cc1: all warnings being treated as errors
 Compilation failed
 f4460ec
+Sun May 15 18:21:17 UTC 2022: 
+ sudoku.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:92:19: error: ‘Node {aka struct <anonymous>}’ has no member named ‘numeros’
+     printf("%i", n->numeros[i]);
+                   ^~
+Compilation failed
+baa1c77

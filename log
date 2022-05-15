@@ -250,3 +250,9 @@ sudoku.c:47:9: error: variable ‘numeros’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 be7af86
+Sun May 15 18:24:20 UTC 2022: 
+ sudoku.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+ tests:  1|4
+total_score: 10/70
+1808e83
